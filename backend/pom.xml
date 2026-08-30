@@ -113,6 +113,7 @@
 							<files>
 								<file>.env</file>
 							</files>
+							<quiet>true</quiet>
 						</configuration>
 					</execution>
 				</executions>
