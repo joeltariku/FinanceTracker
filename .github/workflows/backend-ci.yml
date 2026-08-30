@@ -26,19 +26,19 @@ jobs:
         image: postgres:16
         env:
           POSTGRES_DB: financetracker
-          POSTGRES_USER: username
+          POSTGRES_USER: user
           POSTGRES_PASSWORD: password
         ports:
           - 5432:5432
         options: >-
-          --health-cmd="pg_isready -U financetracker"
+          --health-cmd="pg_isready -U user"
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
 
     env:
       DB_URL: jdbc:postgresql://localhost:5432/financetracker
-      DB_USERNAME: username
+      DB_USERNAME: user
       DB_PASSWORD: password
 
     steps:
