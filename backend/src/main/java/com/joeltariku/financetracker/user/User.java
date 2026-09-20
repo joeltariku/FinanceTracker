@@ -75,7 +75,7 @@ public class User {
         return username;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(String username) {
         this.username = username;
     }
 

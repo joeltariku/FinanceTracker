@@ -3,9 +3,11 @@ package com.joeltariku.financetracker.user.service;
 import com.joeltariku.financetracker.user.CreateUserRequest;
 import com.joeltariku.financetracker.user.User;
 import com.joeltariku.financetracker.user.UserRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 

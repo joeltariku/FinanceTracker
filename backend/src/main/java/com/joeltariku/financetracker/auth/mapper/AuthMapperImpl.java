@@ -6,14 +6,16 @@ import com.joeltariku.financetracker.auth.dto.AuthResultDto;
 import com.joeltariku.financetracker.auth.dto.SignUpRequestDto;
 import com.joeltariku.financetracker.user.User;
 import com.joeltariku.financetracker.user.dto.UserDto;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AuthMapperImpl implements AuthMapper {
     @Override
     public SignupRequest toSignUpRequest(SignUpRequestDto dto) {
         return new SignupRequest(
                 dto.firstName(),
                 dto.lastName(),
-                dto.userName(),
+                dto.username(),
                 dto.email(),
                 dto.password()
         );

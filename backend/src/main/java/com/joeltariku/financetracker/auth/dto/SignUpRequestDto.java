@@ -11,7 +11,7 @@ public record SignUpRequestDto(
         @NotBlank @Size(min = 1, max = 50, message = ERROR_MESSAGE_LAST_NAME_LENGTH)
         String lastName,
         @NotBlank @Size(min = 1, max = 25, message = ERROR_MESSAGE_USERNAME_LENGTH)
-        String userName,
+        String username,
         @NotNull @Email
         String email,
         @NotBlank @Size(min = 8, max = 64, message = ERROR_MESSAGE_PASSWORD_LENGTH)
